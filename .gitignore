@@ -1,3 +1,4 @@
 /.settings
 /.project
 /.buildpath
+public_html/application/logs/*.php
