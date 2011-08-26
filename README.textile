@@ -1,9 +1,13 @@
-h1. Codeigniter.tv source code
+h1. An introduction to Codeigniter MVC
 
-We keep the source code for our Codeigniter.tv video tutorials in this public repository. Each video tutorial has its own branch. 
+This is the source code for our video tutorial 'An introduction to Codeigniter MVC'. The screencast can be found at http://codeigniter.tv/a-4/An-introduction-to-Codeigniter-MVC
 
 * Visit all of out Codeigniter video tutorials on http://codeigniter.tv. 
 * As always, do not forget to comment & subscribe!
+
+h1. Codeigniter.tv source code
+
+We keep the source code for our Codeigniter.tv video tutorials in this public repository. Each video tutorial has its own branch. 
 
 h1. Disclaimer
 
