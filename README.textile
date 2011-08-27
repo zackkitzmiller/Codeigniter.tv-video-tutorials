@@ -1,3 +1,10 @@
+h1. Removing index.php
+
+We've seen a lot of questions about removing index.php in the forums. It's not very difficult, mind you - in most circumstances, that is.
+
+This code should work for most PHP installations on Linux - including fast-cgi.
+However, if you're running PHP on IIS you're on your own :)
+
 h1. Codeigniter.tv source code
 
 We keep the source code for our Codeigniter.tv video tutorials in this public repository. Each video tutorial has its own branch. 
