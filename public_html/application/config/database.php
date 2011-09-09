@@ -44,24 +44,67 @@
 | the active record class
 */
 
-$active_group = 'default';
+switch (ENVIRONMENT) {
+    case 'development':
+    $active_group = 'development';
+    break;
+    case 'staging':
+    $active_group = 'staging';
+    break;
+    default:
+    $active_group = 'production';
+    break;
+}
+
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['development']['hostname'] = 'localhost';
+$db['development']['username'] = '';
+$db['development']['password'] = '';
+$db['development']['database'] = 'development';
+$db['development']['dbdriver'] = 'mysql';
+$db['development']['dbprefix'] = '';
+$db['development']['pconnect'] = TRUE;
+$db['development']['db_debug'] = TRUE;
+$db['development']['cache_on'] = FALSE;
+$db['development']['cachedir'] = '';
+$db['development']['char_set'] = 'utf8';
+$db['development']['dbcollat'] = 'utf8_general_ci';
+$db['development']['swap_pre'] = '';
+$db['development']['autoinit'] = TRUE;
+$db['development']['stricton'] = FALSE;
+
+$db['staging']['hostname'] = 'localhost';
+$db['staging']['username'] = '';
+$db['staging']['password'] = '';
+$db['staging']['database'] = 'staging';
+$db['staging']['dbdriver'] = 'mysql';
+$db['staging']['dbprefix'] = '';
+$db['staging']['pconnect'] = TRUE;
+$db['staging']['db_debug'] = TRUE;
+$db['staging']['cache_on'] = FALSE;
+$db['staging']['cachedir'] = '';
+$db['staging']['char_set'] = 'utf8';
+$db['staging']['dbcollat'] = 'utf8_general_ci';
+$db['staging']['swap_pre'] = '';
+$db['staging']['autoinit'] = TRUE;
+$db['staging']['stricton'] = FALSE;
+
+$db['production']['hostname'] = 'localhost';
+$db['production']['username'] = '';
+$db['production']['password'] = '';
+$db['production']['database'] = 'production';
+$db['production']['dbdriver'] = 'mysql';
+$db['production']['dbprefix'] = '';
+$db['production']['pconnect'] = TRUE;
+$db['production']['db_debug'] = TRUE;
+$db['production']['cache_on'] = FALSE;
+$db['production']['cachedir'] = '';
+$db['production']['char_set'] = 'utf8';
+$db['production']['dbcollat'] = 'utf8_general_ci';
+$db['production']['swap_pre'] = '';
+$db['production']['autoinit'] = TRUE;
+$db['production']['stricton'] = FALSE;
 
 
 /* End of file database.php */

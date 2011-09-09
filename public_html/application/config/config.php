@@ -14,7 +14,18 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+switch (ENVIRONMENT) {
+    case 'development':
+    $config['base_url']	= 'http://codeignitertv/';
+    break;
+    case 'staging':
+    $config['base_url']	= 'http://www.staging.com/';
+    break;
+    default:
+    $config['base_url']	= 'http://www.production.com/';
+    break;
+}
+
 
 /*
 |--------------------------------------------------------------------------
@@ -180,7 +191,15 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+switch (ENVIRONMENT) {
+    case 'development':
+    $config['log_threshold'] = 4;
+    break;
+    default:
+    $config['log_threshold'] = 1;
+    break;
+}
+
 
 /*
 |--------------------------------------------------------------------------

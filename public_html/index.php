@@ -18,7 +18,18 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'development');
+	
+$root = dirname(__FILE__);
+if ($root == 'D:\htdocs\codeignitertv_tutorials\public_html') {
+    define('ENVIRONMENT', 'development');
+}
+elseif($root == '/domains/somedomain.com/public_html'){
+    define('ENVIRONMENT', 'staging');
+}
+else{
+    define('ENVIRONMENT', 'production');
+}
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -33,14 +44,12 @@ if (defined('ENVIRONMENT'))
 	switch (ENVIRONMENT)
 	{
 		case 'development':
-			error_reporting(E_ALL);
+			error_reporting(E_ALL | E_STRICT);
 		break;
-	
-		case 'testing':
+		case 'staging':
 		case 'production':
 			error_reporting(0);
 		break;
-
 		default:
 			exit('The application environment is not set correctly.');
 	}
