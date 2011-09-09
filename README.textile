@@ -1,4 +1,4 @@
-h1. A single app for development, staging and production
+h1. Dynamically distinguish between development, staging and production
 
 Wouldn't it be great if you didn't have to keep different config files for your development, staging and production server? No more mix-ups, lost config files or sudden crashes after an uncareful deployment?
 
