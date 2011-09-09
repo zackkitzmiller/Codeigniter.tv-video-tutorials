@@ -1,9 +1,22 @@
+h1. Create multiple aspect ratio thumbnails
+
+h2. An advanced Codeigniter image library extension
+
+You can find the video tutorial for the source code at http://codeigniter.tv/a-8/Create-multiple-aspect-ratio-thumbnails
+* Visit all of out Codeigniter video tutorials on http://codeigniter.tv. 
+* As always, do not forget to comment & subscribe!
+
+Wouldn't it be great if you could create a number of image thumbnails, all in different sizes and aspect ratios, nicely cropped from the center? We will create a library extension that does just that!
+
+This library extension is great for image galleries, CMS-es and so on. In short: for all applications in which you need to be able to display an image in different sizes.
+
+* Do you need to show all images in a 16/9 ratio on your image gallery? No sweat!
+* Do you want an 800px and a 120px square thumb for your image gallery? No problema, amigo!
+* Do you wish to build your own Flickr clone, and do you need to store 7 thumbnail sizes, all in different aspect ratios? That'll cost you, I'll have to write a whole 12 lines of code!
+
 h1. Codeigniter.tv source code
 
 We keep the source code for our Codeigniter.tv video tutorials in this public repository. Each video tutorial has its own branch. 
-
-* Visit all of out Codeigniter video tutorials on http://codeigniter.tv. 
-* As always, do not forget to comment & subscribe!
 
 h1. Disclaimer
 
