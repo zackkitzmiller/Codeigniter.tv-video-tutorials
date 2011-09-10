@@ -19,16 +19,18 @@
  *
  */
 	
-$root = dirname(__FILE__);
-if ($root == 'D:\htdocs\codeignitertv_tutorials\public_html') {
-    define('ENVIRONMENT', 'development');
+switch (dirname(__FILE__)) {
+    case 'G:\htdocs\codeignitertv_tutorials\public_html':
+        define('ENVIRONMENT', 'development');
+        break;
+    case '/domains/staging.com/public_html/':
+        define('ENVIRONMENT', 'staging');
+        break;
+    default:
+        define('ENVIRONMENT', 'production');
+        break;
 }
-elseif($root == '/domains/somedomain.com/public_html'){
-    define('ENVIRONMENT', 'staging');
-}
-else{
-    define('ENVIRONMENT', 'production');
-}
+
 
 /*
  *---------------------------------------------------------------

@@ -46,25 +46,26 @@
 
 switch (ENVIRONMENT) {
     case 'development':
-    $active_group = 'development';
-    break;
+        $active_group = 'development';
+        break;
     case 'staging':
-    $active_group = 'staging';
-    break;
+        $active_group = 'staging';
+        break;
     default:
-    $active_group = 'production';
-    break;
+        $active_group = 'production';
+        break;
 }
+
 
 $active_record = TRUE;
 
 $db['development']['hostname'] = 'localhost';
-$db['development']['username'] = '';
-$db['development']['password'] = '';
+$db['development']['username'] = 'development';
+$db['development']['password'] = 'development';
 $db['development']['database'] = 'development';
 $db['development']['dbdriver'] = 'mysql';
 $db['development']['dbprefix'] = '';
-$db['development']['pconnect'] = TRUE;
+$db['development']['pconnect'] = FALSE;
 $db['development']['db_debug'] = TRUE;
 $db['development']['cache_on'] = FALSE;
 $db['development']['cachedir'] = '';
@@ -72,16 +73,16 @@ $db['development']['char_set'] = 'utf8';
 $db['development']['dbcollat'] = 'utf8_general_ci';
 $db['development']['swap_pre'] = '';
 $db['development']['autoinit'] = TRUE;
-$db['development']['stricton'] = FALSE;
+$db['development']['stricton'] = TRUE;
 
 $db['staging']['hostname'] = 'localhost';
-$db['staging']['username'] = '';
-$db['staging']['password'] = '';
+$db['staging']['username'] = 'staging';
+$db['staging']['password'] = 'staging';
 $db['staging']['database'] = 'staging';
 $db['staging']['dbdriver'] = 'mysql';
 $db['staging']['dbprefix'] = '';
-$db['staging']['pconnect'] = TRUE;
-$db['staging']['db_debug'] = TRUE;
+$db['staging']['pconnect'] = FALSE;
+$db['staging']['db_debug'] = FALSE;
 $db['staging']['cache_on'] = FALSE;
 $db['staging']['cachedir'] = '';
 $db['staging']['char_set'] = 'utf8';
@@ -91,13 +92,13 @@ $db['staging']['autoinit'] = TRUE;
 $db['staging']['stricton'] = FALSE;
 
 $db['production']['hostname'] = 'localhost';
-$db['production']['username'] = '';
-$db['production']['password'] = '';
+$db['production']['username'] = 'production';
+$db['production']['password'] = 'production';
 $db['production']['database'] = 'production';
 $db['production']['dbdriver'] = 'mysql';
 $db['production']['dbprefix'] = '';
-$db['production']['pconnect'] = TRUE;
-$db['production']['db_debug'] = TRUE;
+$db['production']['pconnect'] = FALSE;
+$db['production']['db_debug'] = FALSE;
 $db['production']['cache_on'] = FALSE;
 $db['production']['cachedir'] = '';
 $db['production']['char_set'] = 'utf8';
@@ -105,7 +106,6 @@ $db['production']['dbcollat'] = 'utf8_general_ci';
 $db['production']['swap_pre'] = '';
 $db['production']['autoinit'] = TRUE;
 $db['production']['stricton'] = FALSE;
-
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

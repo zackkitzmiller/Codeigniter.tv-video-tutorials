@@ -16,14 +16,14 @@
 */
 switch (ENVIRONMENT) {
     case 'development':
-    $config['base_url']	= 'http://codeignitertv/';
-    break;
+        $config['base_url']	= 'http://codeignitertv/';
+        break;
     case 'staging':
-    $config['base_url']	= 'http://www.staging.com/';
-    break;
+        $config['base_url']	= 'http://www.staging.com/';
+        break;
     default:
-    $config['base_url']	= 'http://www.production.com/';
-    break;
+        $config['base_url']	= 'http://www.production.com/';
+        break;
 }
 
 
@@ -193,11 +193,11 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 */
 switch (ENVIRONMENT) {
     case 'development':
-    $config['log_threshold'] = 4;
-    break;
+        $config['log_threshold'] = 4;
+        break;
     default:
-    $config['log_threshold'] = 1;
-    break;
+        $config['log_threshold'] = 1;
+        break;
 }
 
 
