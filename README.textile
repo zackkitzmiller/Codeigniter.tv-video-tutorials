@@ -1,3 +1,15 @@
+h1. Extending the core: MY_Controller and beyond
+
+In this video tutorial we will be looking at MY_Controller, frontend controllers and backend controllers. MY_Controller is a kind of base controller that can contain code that you need access to throughout your entire application. Thinks of user login checks, latest news to show in your sidebar, and so on.
+
+Sometimes, having a MY_Controller class just doesn't cut it. You only need a user login check in an admin environment, for instance. If that's the case, you can even extend MY_Controller - and thus have a seperate fontend and backend controller. The sky's the limit, really.
+
+Bottom line: extending the 'classic' CI_Controller can help keep your code clean. It keeps you from having to copy/paste your code through different controllers - we can all imagine the sheer horror if you ever need to make adjustments to that code!
+
+This is the first tutorial in the series 'extending the core'.
+
+The original video tutorial can be viewed from http://codeigniter.tv. 
+ 
 h1. Codeigniter.tv source code
 
 We keep the source code for our Codeigniter.tv video tutorials in this public repository. Each video tutorial has its own branch. 

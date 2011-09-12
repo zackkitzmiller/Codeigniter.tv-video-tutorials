@@ -1,5 +1,15 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+function __autoload ($class)
+{
+    $file = APPPATH . 'libraries/' . $class . EXT;
+    if (strpos($class, 'CI_') !== 0) {
+        if (file_exists($file) && is_file($file)) {
+            @include_once (APPPATH . 'libraries/' . $class . EXT);
+        }
+    }
+}
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -224,7 +234,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'askjhgkjsaghdkhjgasdkjasd67as876d98as76d98as67';
 
 /*
 |--------------------------------------------------------------------------
